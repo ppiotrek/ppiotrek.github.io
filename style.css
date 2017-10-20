@@ -1,0 +1,49 @@
+#container {
+    background: grey;
+    width: 1000px;
+    margin: auto;
+    color: whitesmoke;
+    font-family: Helvetica, sans-serif;
+    padding: 5px;
+}
+#header {
+    margin: auto;
+}
+
+#image {
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+#experience{
+    float: left;
+    color: black;
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.info {
+    float:left;
+    margin-left :20px;
+}
+
+#Projects {
+    float: left;
+    color: black;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer {
+    text-align: center;
+    padding: 5px;
+}
