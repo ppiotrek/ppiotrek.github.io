@@ -18,6 +18,18 @@
     clear: both;
 }
 
+label {
+    width:250px;
+    display:block;
+}
+textarea {
+    height:150px;
+}
+
+.form-input, .form-textarea {
+    width:300px;
+}
+
 #experience{
     float: left;
     color: black;

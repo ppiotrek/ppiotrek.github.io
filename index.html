@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Junior Frontend Developer</title>
-    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <link rel="Stylesheet" type="text/css" href="CSS/style.css" />
 </head>
 <body>
 
 <div id="container">
     <div id="header">
         <div id="image">
-            <img src="zdjecie.jpg" alt="Piotr Psujek" />
+            <img src="images/zdjecie.jpg" alt="Piotr Psujek" />
         </div>
         <div class="info">
             <h1>Piotr Psujek</h1>
@@ -22,7 +22,16 @@
         <h3>Experience</h3>
         <p>Szanowni Państwo<br /> Jestem absolwentem kursu Junior Frontend Developer w InfoShare Academy,<br /> gdzie poznałem podstawy tworzenia stron internetowych oraz aplikacji webowych.<br /> W ciagu 6 miesięcy nauki storzyłem kilka stron internetowych z wykorzystaniem najbardziej popularnych jezyków programowania, jak również współuczestniczyłem w tworzeniu gry. Kurs był nastawiony na część teoretyczną oraz praktyczną,<br /> jednak trenerzy kładli zdecydowany nacisk na ćwiczenia praktyczne.<br /><br /> Poznane języki programowania:<br />HTML<br />CSS<br />JavaSctript </p>
 
+        <form method="POST" action="http://api.jfdzl1.is-academy.pl/emailer.php">
+            <input type="hidden" name="reply-to" value="twoj@email.com">
+            <label for="name">Your name:</label> <input class="form-input" type="text" name="name"><br>
+            <label for="email">Your e-mail:</label><input class="form-input" type="text" name="email"><br>
+            <label for="message">Message:</label>
+            <textarea class="form-textarea" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
     </div>
+
     <div id="Projects">
         <h3>Projects</h3>
         <a href="https://github.com/ppiotrek">Repozytorium GitHub</a>
