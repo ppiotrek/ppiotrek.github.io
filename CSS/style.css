@@ -4,27 +4,25 @@
     margin: auto;
     color: whitesmoke;
     font-family: Helvetica, sans-serif;
-    padding: 5px;
+
+
 }
 #header {
     margin: auto;
+
 }
 
 #image {
     float: left;
-}
 
+
+}
 .clear{
     clear: both;
 }
 
-label {
-    width:250px;
-    display:block;
-}
-textarea {
-    height:150px;
-}
+label{width:250px; display:block;}
+.form-textarea {height:150px;}
 
 .form-input, .form-textarea {
     width:300px;
@@ -37,13 +35,13 @@ textarea {
     padding: 5px;
     margin-bottom: 30px;
     margin-top: 30px;
-}
 
+
+}
 .info {
     float:left;
     margin-left :20px;
 }
-
 #Projects {
     float: left;
     color: black;
@@ -54,8 +52,80 @@ textarea {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 #footer {
     text-align: center;
+
     padding: 5px;
+}
+
+
+
+.obrazek, img {
+    padding:5%;
+    width:50%;
+    display:block;
+}
+
+.column-4{float: left;}
+
+@media (max-width: 767px) {
+    .container{background: grey;}
+    .column-4{
+        width:100%;
+        margin-bottom: 5px;
+
+        display:block;
+    }
+    .info{ margin:0;padding:0;}
+    #Projects{width:95%;}
+    #experience{width:95%;}
+
+    label{width:100%; display:block;}
+    .form-textarea {width:100%;}
+
+    .form-input, .form-textarea {
+        width:100%;
+    }
+    #image{width:100% !important;}
+    img{width:40% !important;}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container{background: grey;}
+    /*40*/
+    .column-1{width:8%;display:block;}
+    .column-2{width:16%;display:block;}
+    .column-3{width:24%;display:block;}
+    .column-4{width:32%;
+
+
+        display:block;
+    }
+    .column-5{width:40%;display:block;}
+    .column-6{width:48%;display:block;}
+    .column-7{width:56%;display:block;}
+    .column-8{width:64%;display:block;}
+    .column-9{width:72%;display:block;}
+    .column-10{width:80%;display:block;}
+    .column-11{width:88%;display:block;}
+    .column-12{width:96%;display:block;}
+    .info{ margin:0;padding:0;}
+
+    #image{width:50% !important;}
+    img{width:50% !important;}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container{background: grey;}
+    .column-4{width:240px;}
+
+    #image{width:50% !important;}
+    img{width:50% !important;}
+    /*60*/
+}
+
+@media (min-width: 1200px) {
+    .container{background: grey;}
+    .column-4{width:240px;}
+    #image{width:50%;}
 }

@@ -3,44 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Junior Frontend Developer</title>
+
     <link rel="Stylesheet" type="text/css" href="css/style.css" />
+
+
 </head>
 <body>
 
-<div id="container">
-    <div id="header">
-        <div id="image">
-            <img src="images/my_logo.jpg" alt="Piotr Psujek" />
+<div class="container ">
+    <div id="header" class="row">
+        <div id="image" class="column-4">
+            <img class="obrazek" src="images/my_logo.jpg" alt="Piotr Psujek" />
+
         </div>
-        <div class="info">
+        <div class="info column-4">
             <h1>Piotr Psujek</h1>
             <p>Junior Frontend Developer</p>
         </div>
         <div class="clear"></div>
-    </div>
-    <div id="experience">
-        <h3>Experience</h3>
-        <p>Szanowni Państwo<br /> Jestem absolwentem kursu Junior Frontend Developer w InfoShare Academy,<br /> gdzie poznałem podstawy tworzenia stron internetowych oraz aplikacji webowych.<br /> W ciagu 6 miesięcy nauki storzyłem kilka stron internetowych z wykorzystaniem najbardziej popularnych jezyków programowania, jak również współuczestniczyłem w tworzeniu gry. Kurs był nastawiony na część teoretyczną oraz praktyczną,<br /> jednak trenerzy kładli zdecydowany nacisk na ćwiczenia praktyczne.<br /><br /> Poznane języki programowania:<br />HTML<br />CSS<br />JavaSctript </p>
 
-        <form method="POST" action="http://api.jfdzl1.is-academy.pl/emailer.php">
-            <input type="hidden" name="reply-to" value="twoj@email.com">
-            <label for="name">Your name:</label> <input class="form-input" type="text" name="name"><br>
-            <label for="email">Your e-mail:</label><input class="form-input" type="text" name="email"><br>
-            <label for="message">Message:</label>
-            <textarea class="form-textarea" name="message"></textarea><br>
-            <input type="submit" value="Send">
-        </form>
+    </div>
+    <div class="row">
+        <div id="experience" class="column-4">
+            <h3>Experience</h3>
+            <p>Szanowni Państwo</p>
+            <p> Jestem absolwentem kursu Junior Frontend Developer w InfoShare Academy gdzie poznałem podstawy tworzenia stron internetowych oraz aplikacji webowych. W ciagu 6 miesięcy nauki storzyłem kilka stron internetowych <br /> z wykorzystaniem najbardziej popularnych jezyków programowania, jak również współuczestniczyłem w tworzeniu gry. Kurs był nastawiony na część teoretyczną oraz praktyczną, jednak trenerzy kładli zdecydowany nacisk<br /> na ćwiczenia praktyczne.</p><p> Poznane języki programowania:<br /> HTML<br /> CSS<br /> JavaScript </p>
+            <form method="POST" action="http://api.jfdzl1.is-academy.pl/emailer.php">
+                <input type="hidden" name="reply-to" value="twoj@email.com" class="form-group">
+                <label for="name">Your name:</label> <input class="form-input" type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                <label for="email">Your e-mail:</label><input class="form-input" type="text" name="email"><br>
+                <label for="message">Message:</label>
+                <textarea class="form-textarea" name="message"></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+
+
+        </div>
     </div>
 
     <div id="Projects">
         <h3>Projects</h3>
         <a href="https://github.com/ppiotrek">Repozytorium GitHub</a>
         <a href="www.wp.pl">Strona Internetowa</a>
+
     </div>
-    <div id="footer" class="clear">
+    <div id="footer" class="clear col">
         <p>(c)Piotr Psujek</p>
+
     </div>
+
+
 </div>
+
 
 </body>
 </html>
